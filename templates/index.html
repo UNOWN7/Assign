@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>ASSIGNMENT</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                
+            }
+            form{
+                width:450px;
+                margin:auto;
+                padding: 30px;
+                border: 2px solid black;
+            }
+
+            input,button{
+                width:100%;
+                padding:10px;
+                margin: 10px 0
+            }
+
+            button{
+                background-color: #15b7f8e3;
+                color: white;
+            }
+            hr{
+                width:max-content;
+            }
+
+            h4{
+                color:rgb(243, 69, 69);
+                
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+
+        <form method="post">
+            <h4 class="ou">{{ out | safe }}</h4>
+            <h3>Submit Name and E-mail</h3>
+            
+            <label>Name:<input type="text" Name="name" required></label>
+            <label>E-mail:<input type="email" Name="email" required></label>
+            <button type="submit">Submit</button>
+        </form>
+        
+    </body>
+</html>
